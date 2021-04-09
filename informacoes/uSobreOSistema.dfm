@@ -3,7 +3,7 @@ object frmSobreOSistema: TfrmSobreOSistema
   Top = 0
   BorderIcons = [biSystemMenu]
   Caption = 'Sobre o Sistema'
-  ClientHeight = 128
+  ClientHeight = 82
   ClientWidth = 635
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -19,19 +19,16 @@ object frmSobreOSistema: TfrmSobreOSistema
     Left = 0
     Top = 0
     Width = 635
-    Height = 128
+    Height = 82
     Align = alClient
     TabOrder = 0
-    ExplicitLeft = 248
-    ExplicitTop = 128
-    ExplicitWidth = 185
-    ExplicitHeight = 41
+    ExplicitHeight = 128
     DesignSize = (
       635
-      128)
+      82)
     object Label1: TLabel
       Left = 496
-      Top = 80
+      Top = 34
       Width = 127
       Height = 13
       Anchors = [akRight, akBottom]
@@ -40,7 +37,7 @@ object frmSobreOSistema: TfrmSobreOSistema
     end
     object Label2: TLabel
       Left = 496
-      Top = 99
+      Top = 53
       Width = 132
       Height = 22
       Anchors = [akRight, akBottom]
@@ -55,7 +52,7 @@ object frmSobreOSistema: TfrmSobreOSistema
     end
     object Image1: TImage
       Left = 8
-      Top = 89
+      Top = 43
       Width = 33
       Height = 31
       Hint = 'WhatsApp'
@@ -655,7 +652,7 @@ object frmSobreOSistema: TfrmSobreOSistema
     end
     object Label3: TLabel
       Left = 47
-      Top = 100
+      Top = 54
       Width = 84
       Height = 13
       Anchors = [akRight, akBottom]
@@ -664,7 +661,7 @@ object frmSobreOSistema: TfrmSobreOSistema
     end
     object Label4: TLabel
       Left = 176
-      Top = 99
+      Top = 53
       Width = 74
       Height = 13
       Anchors = [akRight, akBottom]
@@ -673,7 +670,7 @@ object frmSobreOSistema: TfrmSobreOSistema
     end
     object Image2: TImage
       Left = 137
-      Top = 89
+      Top = 43
       Width = 33
       Height = 31
       Hint = 'WhatsApp'
@@ -1229,7 +1226,7 @@ object frmSobreOSistema: TfrmSobreOSistema
     end
     object Image3: TImage
       Left = 256
-      Top = 89
+      Top = 43
       Width = 33
       Height = 31
       Hint = 'WhatsApp'
@@ -1672,7 +1669,7 @@ object frmSobreOSistema: TfrmSobreOSistema
     end
     object Label5: TLabel
       Left = 295
-      Top = 99
+      Top = 53
       Width = 115
       Height = 13
       Anchors = [akRight, akBottom]
@@ -1681,7 +1678,7 @@ object frmSobreOSistema: TfrmSobreOSistema
     end
     object Label6: TLabel
       Left = 8
-      Top = 59
+      Top = 13
       Width = 179
       Height = 19
       Anchors = [akRight, akBottom]
