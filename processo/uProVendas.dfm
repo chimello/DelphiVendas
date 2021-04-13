@@ -71,9 +71,9 @@ inherited frmProVenda: TfrmProVenda
         Top = 48
         Width = 121
         Height = 21
-        EditLabel.Width = 64
+        EditLabel.Width = 70
         EditLabel.Height = 13
-        EditLabel.Caption = 'N'#233'mro Venda'
+        EditLabel.Caption = 'N'#250'mero Venda'
         MaxLength = 10
         NumbersOnly = True
         TabOrder = 0
