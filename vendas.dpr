@@ -28,6 +28,5 @@ begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TfrmPrincipal, frmPrincipal);
-  Application.CreateForm(TDTMEntradaEstoque, DTMEntradaEstoque);
   Application.Run;
 end.

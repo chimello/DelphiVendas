@@ -65,6 +65,8 @@ procedure TfrmProEntradaEstoque.FormCreate(Sender: TObject);
 begin
   inherited;
   DTMEntradaEstoque:=TDTMEntradaEstoque.Create(Self);
+  DTMEntradaEstoque.qryFornecedor.Close;
+  DTMEntradaEstoque.qryFornecedor.Open;
   IndiceAtual := 'codiestoque';
 end;
 
