@@ -27,6 +27,7 @@ type
     destructor Destroy; override;
     function BaixaEstoque: Boolean;
     function RetornaEstoque: Boolean;
+    function AdicionarEstoque: Boolean;
   published
     property produtoId    :Integer  read F_ProdutoId  write F_ProdutoId;
     property quantidade   :Double   read F_Quantidade write F_Quantidade;
@@ -101,6 +102,35 @@ begin
     end;
   end;
 end;
+
+function TControleEstoque.AdicionarEstoque: Boolean;
+var Qry: TZQuery;
+begin
+  try
+   Result := True;
+    Qry := TZQuery.Create(nil);
+    Qry.Connection := ConexaoDB;
+    Qry.SQL.Clear;
+
+    Qry.SQL.Add('UPDATE produtos ' +
+                'SET quantidade = quantidade + :qtdeRetorno ' +
+                'WHERE produtoId =:produtoId ');
+    Qry.ParamByName('produtoId').AsInteger := produtoId;
+    Qry.ParamByName('qtdeRetorno').AsFloat := quantidade;
+    try
+      Qry.ExecSQL;
+    except
+      Result := False;
+    end;
+  finally
+    if Assigned(Qry) then
+    begin
+      FreeAndNil(Qry);
+    end;
+  end;
+end;
+
+
 {$ENDREGION}
 
 end.

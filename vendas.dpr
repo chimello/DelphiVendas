@@ -20,7 +20,8 @@ uses
   cControleEstoque in 'classes\cControleEstoque.pas' {$R *.res},
   uProEntradaEstoque in 'processo\uProEntradaEstoque.pas' {frmProEntradaEstoque},
   uSobreOSistema in 'informacoes\uSobreOSistema.pas' {frmSobreOSistema},
-  uDTMEntradaEstoque in 'datamodule\uDTMEntradaEstoque.pas' {DTMEntradaEstoque: TDataModule};
+  uDTMEntradaEstoque in 'datamodule\uDTMEntradaEstoque.pas' {DTMEntradaEstoque: TDataModule},
+  cProEntradaEstoque in 'classes\cProEntradaEstoque.pas';
 
 {$R *.res}
 

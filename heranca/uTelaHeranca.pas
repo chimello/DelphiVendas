@@ -84,6 +84,7 @@ begin
   ControlarBotoes(btnNovo, btnAlterar, btnCancelar, btnGravar, btnApagar,
     btnNavigator, pgcPrincipal, false);
   EstadoDoCadastro := ECInserir;
+  LimparEdits;
   pgcPrincipal.Pages[1].TabVisible := true;
 end;
 

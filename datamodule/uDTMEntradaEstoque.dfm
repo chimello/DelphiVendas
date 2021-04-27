@@ -1,10 +1,11 @@
 object DTMEntradaEstoque: TDTMEntradaEstoque
   OldCreateOrder = False
+  OnCreate = DataModuleCreate
+  OnDestroy = DataModuleDestroy
   Height = 286
   Width = 554
   object qryFornecedor: TZQuery
     Connection = dtmPrincipal.conexaoDB
-    Active = True
     SQL.Strings = (
       'SELECT clienteId,'
       '       nome'
