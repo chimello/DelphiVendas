@@ -149,32 +149,32 @@ procedure TfrmPrincipal.AtualizacaoBancoDados(aForm:TfrmAtualizaDB);
 begin
   aForm.chkConexao.Checked := True;
   aForm.Refresh;
-  Sleep(50);
+  Sleep(20);
 
   dtmPrincipal.qryScriptCategorias.ExecSQL;
   aForm.chkCategoria.Checked := True;
   aForm.Refresh;
-  Sleep(50);
+  Sleep(20);
 
   dtmPrincipal.qryScriptProdutos.ExecSQL;
   aForm.chkProduto.Checked := True;
   aForm.Refresh;
-  Sleep(50);
+  Sleep(20);
 
   dtmPrincipal.qryScriptClientes.ExecSQL;
   aForm.chkCliente.Checked := True;
   aForm.Refresh;
-  Sleep(50);
+  Sleep(20);
 
   dtmPrincipal.qryScriptVendas.ExecSQL;
   aForm.chkVendas.Checked := True;
   aForm.Refresh;
-  Sleep(50);
+  Sleep(20);
 
   dtmPrincipal.qryScriptItensVendas.ExecSQL;
   aForm.chkItensVendas.Checked := True;
   aForm.Refresh;
-  Sleep(50);
+  Sleep(20);
 
 end;
 

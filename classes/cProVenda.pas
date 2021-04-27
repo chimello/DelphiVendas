@@ -34,7 +34,8 @@ type
     procedure BaixaEstoque(ProdutoId: Integer; Quantidade: Double);
     procedure RetornaEstoqueTotalVenda(sCodigoVenda: String; Acao:TAcaoExcluirEstoque);
 
-   public                      constructor Create(aconexao:TZConnection);
+   public
+    constructor Create(aconexao:TZConnection);
     destructor Destroy; override;
     function Inserir(cds:TClientDataSet):Boolean;
     function Atualizar(cds:TClientDataSet):Boolean;

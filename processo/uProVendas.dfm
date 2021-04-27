@@ -9,10 +9,6 @@ inherited frmProVenda: TfrmProVenda
   end
   inherited pgcPrincipal: TPageControl
     inherited tabListagem: TTabSheet
-      ExplicitLeft = 4
-      ExplicitTop = 24
-      ExplicitWidth = 1047
-      ExplicitHeight = 471
       inherited grdListagem: TDBGrid
         DataSource = dtsListagem
         Columns = <
@@ -47,10 +43,6 @@ inherited frmProVenda: TfrmProVenda
       end
     end
     inherited tabManutencao: TTabSheet
-      ExplicitLeft = 4
-      ExplicitTop = 24
-      ExplicitWidth = 1047
-      ExplicitHeight = 471
       object lblCategoria: TLabel
         Left = 152
         Top = 29
@@ -71,9 +63,9 @@ inherited frmProVenda: TfrmProVenda
         Top = 48
         Width = 121
         Height = 21
-        EditLabel.Width = 64
+        EditLabel.Width = 70
         EditLabel.Height = 13
-        EditLabel.Caption = 'N'#233'mro Venda'
+        EditLabel.Caption = 'N'#250'mero Venda'
         MaxLength = 10
         NumbersOnly = True
         TabOrder = 0

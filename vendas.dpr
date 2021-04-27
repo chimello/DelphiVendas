@@ -17,9 +17,11 @@ uses
   uDTMVenda in 'datamodule\uDTMVenda.pas' {dtmVenda: TDataModule},
   uProVendas in 'processo\uProVendas.pas' {frmProVenda},
   cProVenda in 'classes\cProVenda.pas',
-  cControleEstoque in 'classes\cControleEstoque.pas',
+  cControleEstoque in 'classes\cControleEstoque.pas' {$R *.res},
   uProEntradaEstoque in 'processo\uProEntradaEstoque.pas' {frmProEntradaEstoque},
-  uSobreOSistema in 'informacoes\uSobreOSistema.pas' {frmSobreOSistema};
+  uSobreOSistema in 'informacoes\uSobreOSistema.pas' {frmSobreOSistema},
+  uDTMEntradaEstoque in 'datamodule\uDTMEntradaEstoque.pas' {DTMEntradaEstoque: TDataModule},
+  cProEntradaEstoque in 'classes\cProEntradaEstoque.pas';
 
 {$R *.res}
 
